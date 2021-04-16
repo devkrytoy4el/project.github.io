@@ -23,6 +23,26 @@ ul {
     margin: 0 auto;
 }
 
+.nav__item,
+.main,
+.about {
+    text-transform: uppercase;
+}
+
+.nav__item,
+.about__main-skill-item {
+    text-align: center;
+}
+
+.nav__item-link,
+.main__content-btn-link {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* HEADER */
+
 .header {
     display: flex;
     justify-content: center;
@@ -32,11 +52,6 @@ ul {
 
 .nav__list {
     display: flex;
-}
-
-.nav__item {
-    text-align: center;
-    text-transform: uppercase;
 }
 
 .nav__item::before {
@@ -49,15 +64,14 @@ ul {
     margin: 0;
 }
 
+
+/* MAIN */
+
 .main {
     height: 100vh;
     background: url(../img/bg/Background.png) center/cover no-repeat;
     color: white;
     position: relative;
-}
-
-.main {
-    text-transform: uppercase;
 }
 
 .main__content-name {
@@ -80,8 +94,6 @@ ul {
 }
 
 .main__content-btn-link {
-    text-decoration: none;
-    color: white;
     padding: 30px 50px;
 }
 
@@ -102,6 +114,87 @@ ul {
 
 .main__content-desc {
     text-shadow: 1px 1px 2px transparent, 0 0 1em red;
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 31px;
+}
+
+
+/* ABOUT */
+
+.about__main {
+    display: flex;
+    align-items: center;
+    text-align: end;
+    height: 100vh;
+}
+
+.about__main-title {
+    color: #15263e;
+    font-size: 2.5em;
+    margin-bottom: 25px;
+}
+
+.about__main-title-desc {
+    font-size: 1.3em;
+    color: #a21af0;
+    margin-bottom: 35px;
+}
+
+.colortext {
+    color: #ff0097;
+}
+
+.about__main-photo-pic {
+    width: 100%;
+}
+
+.about__main-desc {
+    text-transform: none;
+    font-size: larger;
+}
+
+.about__main-skill-box {
+    background-image: linear-gradient(49deg, #a21af0, #ff0072);
+    width: 25em;
+    height: 1.5em;
+    border-radius: 25px;
+}
+
+.about__main-skill-item {
+    margin: 12px;
+}
+
+.about__main_content {
+    margin: 130px 0 140px 0;
+    width: 100%;
+}
+
+.about__contact-content {
+    padding: 100px;
+    background-color: #dcdcde;
+}
+
+.about__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__contact-block {
+    display: flex;
+    margin-right: 123px;
+    align-items: center;
+}
+
+.about__contact-block:last-child {
+    margin-right: 0;
+}
+
+.about__contact-img {
+    margin-right: 37px;
+}
+
+.about__contact-block-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
