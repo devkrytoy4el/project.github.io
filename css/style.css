@@ -527,9 +527,7 @@ ul {
         flex-direction: column;
         margin-top: 31px;
     }
-    .blog__content-block-main {
-        width: 50%;
-    }
+
     .blog__contentt {
         display: flex;
         flex-wrap: wrap;
