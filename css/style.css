@@ -53,7 +53,7 @@ ul {
 .services__header-desc,
 .testimonials__title,
 .contact__content-header-title,
-.contact__content-header-desc {
+.contact__content-header-desc,.blog__header-desc{
     text-align: center;
 }
 
@@ -498,7 +498,6 @@ ul {
 }
 
 .contact__content-header-title {
-    margin: 100px 0 15px 0;
     font-size: 1.5em;
     font-weight: bold;
 }
@@ -604,9 +603,6 @@ ul {
     }
     .contract__content-main {
         padding: 30px;
-    }
-    .contact__content-header-title {
-        margin: 72px 0 15px 0;
     }
     .contact__content-header-desc {
         padding: 0px 30px 0px 30px;
