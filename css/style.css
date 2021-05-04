@@ -75,14 +75,16 @@ ul {
 
 .nav__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.nav__item::before {
+.nav__item::after {
     content: "•";
     margin: 0 42px;
 }
 
-.nav__item:first-child::before {
+.nav__item:last-child::after {
     content: '';
     margin: 0;
 }
