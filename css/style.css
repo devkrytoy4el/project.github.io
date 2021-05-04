@@ -488,7 +488,9 @@ ul {
     flex-direction: column;
     justify-content: center;
 }
-
+.contact-short{
+    background-color: #dcdcde;
+}
 .contract__content-main {
     display: flex;
     justify-content: center;
