@@ -646,3 +646,9 @@ ul {
         margin-bottom: 30px;
     }
 }
+
+@media (max-width: 480px) {
+    .blog__content-block {
+        width: 100%;
+    }
+}
