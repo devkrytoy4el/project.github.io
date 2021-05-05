@@ -381,13 +381,10 @@ ul {
 
 .portfolio__right-content {
     display: flex;
-}
-
-.portfolio__right-content {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
+    padding-left: 0;
 }
 
 .portfolio__list-item {
@@ -635,6 +632,8 @@ ul {
         flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: 80px;
+        padding-left: 0;
+
     }
     .blog__content-block {
         width: 45%;
