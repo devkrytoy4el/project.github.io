@@ -434,7 +434,7 @@ ul {
 
 .experience__content-block-separator {
     background-color: #dcdcde;
-    width: 15px;
+    min-width: 15px;
     height: 62px;
 }
 
