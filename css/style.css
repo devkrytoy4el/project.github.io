@@ -655,4 +655,7 @@ ul {
     .about__main {
         margin: 40px 0 40px 0;
     }
+    .contact__content-header, .contact__content-header-desc , .feedback , .feedback__input{
+    font-size: 13px;
+    }
 }
