@@ -652,4 +652,7 @@ ul {
     .blog__content-block {
         width: 100%;
     }
+    .about__main {
+        margin: 40px 0 40px 0;
+    }
 }
