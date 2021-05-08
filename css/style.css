@@ -579,6 +579,22 @@ ul {
     margin-bottom: 21px;
 }
 
+.up {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.up__link {
+    margin: 0px 13px 13px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.up__link-img {
+    width: 50%;
+}
+
 @media (max-width: 768px) {
     .header {
         background-color: transparent;

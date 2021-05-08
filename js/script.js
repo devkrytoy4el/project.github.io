@@ -1,10 +1,15 @@
+//MENU
 const menuButton = document.querySelector('.header__mobile');
 const menu = document.querySelector('.header');
 const mainContent = document.querySelector('.main__content')
 const nav = document.querySelector('.nav');
 const list = document.querySelector('.nav__list');
 
+//UP BUTTON
+const upButton = document.querySelector('.up')
 
+
+//MENU LOGIC
 menuButton.addEventListener('click', function(event) {
     menu.classList.toggle('active');
     mainContent.classList.toggle('none');
@@ -27,3 +32,14 @@ list.addEventListener('click', function(event) {
         menuButton.classList.remove('margin');
     }
 })
+
+//UP BUTTON LOGIC
+function mouseCoords(e) {
+    x = e.pageX; // Координата X курсора
+    y = e.pageY; // Координата Y курсора
+    if (y >= window.screen.height) {
+        upButton.classList.remove('none')
+    } else {
+        upButton.classList.add('none')
+    }
+}
