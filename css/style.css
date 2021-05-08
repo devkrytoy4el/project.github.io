@@ -1,5 +1,6 @@
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 html,
@@ -77,6 +78,10 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.nav__item:visited {
+    color: wheat;
 }
 
 .nav__item::after {
