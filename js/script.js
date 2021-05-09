@@ -17,7 +17,7 @@ menuButton.addEventListener('click', function(event) {
     nav.classList.toggle('active2');
     list.classList.toggle('active3');
     menuButton.classList.toggle('margin');
-    document.body.toggle('hidden')
+    document.body.classList.toggle('hidden')
 })
 
 
