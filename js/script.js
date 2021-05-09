@@ -24,12 +24,14 @@ menuButton.addEventListener('click', function(event) {
 list.addEventListener('click', function(event) {
     let target = event.target;
     console.log(target)
+
     if (target.className = 'nav__item') {
         menu.classList.remove('active');
         mainContent.classList.remove('none');
         nav.classList.remove('active2');
         list.classList.remove('active3');
         menuButton.classList.remove('margin');
+        document.body.classList.toggle('hidden')
     }
 })
 
