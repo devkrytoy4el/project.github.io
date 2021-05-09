@@ -17,14 +17,7 @@ menuButton.addEventListener('click', function(event) {
     nav.classList.toggle('active2');
     list.classList.toggle('active3');
     menuButton.classList.toggle('margin');
-    for (let i = 0; i < document.querySelector('.wrapper').childNodes.length; i++) {
-        if (wrapper.childNodes[i].classList != 'main') {
-            //wrapper.childNodes[i].classList.toggle('.none');
-            wrapper.childNodes[i].classList.toggle('.none');
-            console.log(wrapper);
-
-        }
-    }
+    document.body.toggle('hidden')
 })
 
 

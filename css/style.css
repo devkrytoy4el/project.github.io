@@ -595,6 +595,10 @@ ul {
     width: 50%;
 }
 
+.hidden {
+    overflow-y: hidden;
+}
+
 @media (max-width: 768px) {
     .header {
         background-color: transparent;
