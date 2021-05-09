@@ -596,7 +596,7 @@ ul {
 }
 
 .hidden {
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 @media (max-width: 768px) {
