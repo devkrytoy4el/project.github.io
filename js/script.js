@@ -4,6 +4,7 @@ const menu = document.querySelector('.header');
 const mainContent = document.querySelector('.main__content')
 const nav = document.querySelector('.nav');
 const list = document.querySelector('.nav__list');
+const wrapper = document.querySelector('.wrapper');
 
 //UP BUTTON
 const upButton = document.querySelector('.up')
@@ -16,8 +17,14 @@ menuButton.addEventListener('click', function(event) {
     nav.classList.toggle('active2');
     list.classList.toggle('active3');
     menuButton.classList.toggle('margin');
-    let target = event.target;
-    console.log(target)
+    for (let i = 0; i < document.querySelector('.wrapper').childNodes.length; i++) {
+        if (wrapper.childNodes[i].classList != 'main') {
+            //wrapper.childNodes[i].classList.toggle('.none');
+            wrapper.childNodes[i].classList.toggle('.none');
+            console.log(wrapper);
+
+        }
+    }
 })
 
 
