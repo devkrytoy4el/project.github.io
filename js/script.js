@@ -31,7 +31,9 @@ list.addEventListener('click', function(event) {
         nav.classList.remove('active2');
         list.classList.remove('active3');
         menuButton.classList.remove('margin');
-        document.body.classList.toggle('hidden')
+        if (window.screen.width <= 768){
+            document.body.classList.toggle('hidden');    
+        }
     }
 })
 
