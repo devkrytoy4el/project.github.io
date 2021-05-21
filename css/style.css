@@ -425,6 +425,11 @@ ul {
 .portfolio__list-item {
     cursor: pointer;
 }
+.portfolio__list-item:hover{
+    background-image: linear-gradient(49deg, #a21af0, #ff0072);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 
 /* EXPERIENCE */
@@ -611,8 +616,16 @@ ul {
 .hidden {
     overflow: hidden;
 }
-
+.portfolio__list-title{
+    cursor: pointer;
+    display: none;
+    text-align: center;
+    padding: 10px;
+}
 @media (max-width: 768px) {
+    .portfolio__list-title{
+        display: block;
+    }
     .header {
         background-color: transparent;
         justify-content: flex-end;
@@ -674,8 +687,9 @@ ul {
         justify-content: center;
     }
     .portfolio__list-content {
-        flex-direction: row;
-        display: flex;
+        padding: 0;
+        display: none;
+        flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
     }
@@ -786,4 +800,7 @@ ul {
 .menu__mobile-item-link:active {
 
     color: wheat;
+}
+.portfolio__list-content.active{
+    display: flex;
 }

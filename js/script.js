@@ -7,8 +7,15 @@ const list = document.querySelector('.menu__mobile-list');
 const wrapper = document.querySelector('.wrapper');
 
 //UP BUTTON
-const upButton = document.querySelector('.up')
+const upButton = document.querySelector('.up');
 
+//PORTFOLIO MENU
+const portfolioMenu = document.querySelector('.portfolio__list-title');
+
+//PORTFOLIO MENU LOGIC
+portfolioMenu.addEventListener('click', function(event) {
+    document.querySelector('.portfolio__list-content').classList.toggle('active')
+})
 
 //MENU LOGIC
 const menuMobile = document.querySelector('.menu__mobile');
