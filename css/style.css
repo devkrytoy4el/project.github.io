@@ -754,7 +754,8 @@ ul {
     bottom : 0;
     right : 0;
     left : 0;
-    opacity: 0.9;
+    height: 100vh;
+    font-size: 1.3em;
 
 }
 
