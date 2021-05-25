@@ -52,3 +52,25 @@ function mouseCoords(e) {
         upButton.classList.add('none')
     }
 }
+
+const menuLinks = document.querySelectorAll('.portfolio__list-item');
+const item = document.querySelectorAll('.portfolio__right-content-img')
+
+
+for (let i=0; i<=menuLinks.length;i++){
+    menuLinks[i].addEventListener('click',function(){
+        for(el of item){
+            el.classList.remove('active')
+        }
+
+        if (i==0){
+            item.forEach(function(el,i){
+                item[i].classList.add('active')
+            })
+        }
+        else{
+            item[i-1].classList.toggle('active')
+        }
+       
+    })
+}

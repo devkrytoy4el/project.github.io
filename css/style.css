@@ -804,3 +804,9 @@ ul {
 .portfolio__list-content.active{
     display: flex;
 }
+.portfolio__right-content-img{
+    display: none;
+}
+.portfolio__right-content-img.active{
+    display: flex;
+}
