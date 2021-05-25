@@ -808,6 +808,9 @@ ul {
 .portfolio__right-content-img{
     display: none;
 }
+
 .portfolio__right-content-img.active{
     display: flex;
+    box-shadow: 1px 0px 0px 12px transparent, 0 0 3em #8396b3;
+    margin: 21px;
 }
