@@ -123,6 +123,7 @@ ul {
     margin-bottom: 5px;
     border-radius: 5px;
     box-shadow: 1px 1px 2px transparent, 0 0 3em #0b2349;
+    transition: 0.3s;
 }
 
 
@@ -587,7 +588,7 @@ ul {
 
 .footer__content {
     text-align: center;
-    padding: 75px 0 100px 0;
+    padding: 100px 0 100px 0;
 }
 
 .feedback {
@@ -821,6 +822,24 @@ ul {
 
 .header__mobile.active {
     margin: 0;
+    transition: 1s ease-in-out;
+}
+
+.header__mobile-line.active {
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+.header__mobile-line.active:first-child {
+    opacity: 1;
+    display: block;
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.header__mobile-line.active:last-child {
+    opacity: 1;
+    display: block;
+    transform: rotate(45deg) translate(-16px, -11px);
 }
 
 .menu__mobile-list {
@@ -846,13 +865,14 @@ ul {
     text-align: center;
 }
 
-.menu__mobile-item-link {
+.menu__mobile-item-link,
+.menu__mobile-item {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
 }
 
-.menu__mobile-item-link:active {
+.menu__mobile-item-link:hover {
     color: wheat;
 }
 

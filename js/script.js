@@ -1,5 +1,6 @@
 //MENU
 const menuButton = document.querySelector('.header__mobile');
+const buttonLines = document.querySelectorAll('.header__mobile-line');
 const menu = document.querySelector('.header');
 const mainContent = document.querySelector('.main__content')
 const nav = document.querySelector('.nav');
@@ -31,6 +32,10 @@ const menuMobile = document.querySelector('.menu__mobile');
 menuButton.addEventListener('click', function(event) {
     menuMobile.classList.toggle('active')
     document.body.classList.toggle('hidden');
+    buttonLines.forEach(function(el, i) {
+        buttonLines[i].classList.toggle('active')
+    })
+
 })
 
 list.addEventListener('click', function(event) {
