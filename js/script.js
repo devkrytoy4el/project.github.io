@@ -36,8 +36,8 @@ menuButton.addEventListener('click', function(event) {
 list.addEventListener('click', function(event) {
     let target = event.target;
     if (target.className = 'menu__mobile-item') {
-        document.body.classList.toggle('hidden');  
-        menuMobile.classList.toggle('active')  
+        document.body.classList.toggle('hidden');
+        menuMobile.classList.toggle('active')
 
     }
 })
@@ -57,20 +57,23 @@ const menuLinks = document.querySelectorAll('.portfolio__list-item');
 const item = document.querySelectorAll('.portfolio__right-content-img')
 
 
-for (let i=0; i<=menuLinks.length;i++){
-    menuLinks[i].addEventListener('click',function(){
-        for(el of item){
+for (let i = 0; i <= menuLinks.length; i++) {
+    menuLinks[i].addEventListener('click', function() {
+        for (el of item) {
             el.classList.remove('active')
         }
 
-        if (i==0){
-            item.forEach(function(el,i){
+        if (i == 0) {
+            item.forEach(function(el, i) {
                 item[i].classList.add('active')
             })
+        } else {
+            item[i - 1].classList.toggle('active')
         }
-        else{
-            item[i-1].classList.toggle('active')
+
+        for (elem of menuLinks) {
+            elem.classList.remove('active')
         }
-       
+        menuLinks[i].classList.toggle('active')
     })
 }
