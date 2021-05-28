@@ -42,7 +42,7 @@ list.addEventListener('click', function(event) {
     let target = event.target;
     if (target.className = 'menu__mobile-item') {
         document.body.classList.toggle('hidden');
-        menuMobile.classList.toggle('active');
+        menuMobile.classList.toggle('active')
         buttonLines.forEach(function(el, i) {
             buttonLines[i].classList.toggle('active')
         })
@@ -84,3 +84,10 @@ for (let i = 0; i <= menuLinks.length; i++) {
         menuLinks[i].classList.toggle('active')
     })
 }
+
+const sendBtn = document.querySelector('.feedback__btn-send')
+
+sendBtn.addEventListener('click',function(event){
+    event.preventDefault();
+    alert('Successfully');
+})
