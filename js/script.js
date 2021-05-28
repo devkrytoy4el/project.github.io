@@ -42,8 +42,10 @@ list.addEventListener('click', function(event) {
     let target = event.target;
     if (target.className = 'menu__mobile-item') {
         document.body.classList.toggle('hidden');
-        menuMobile.classList.toggle('active')
-
+        menuMobile.classList.toggle('active');
+        buttonLines.forEach(function(el, i) {
+            buttonLines[i].classList.toggle('active')
+        })
     }
 })
 
